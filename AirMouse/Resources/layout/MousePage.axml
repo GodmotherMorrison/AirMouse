@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<TextView
+		android:text="AirMouse"
+		android:textColor="@android:color/black"
+		android:gravity="center"
+		android:paddingTop="30dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/relativeLayout1">
+		<ImageButton
+			android:layout_width="190dp"
+			android:layout_height="200dp"
+			android:layout_alignParentTop = "true"
+			android:layout_alignParentRight = "true"
+			android:id="@+id/mouseButtonRight" />
+		<ImageButton
+			android:layout_width="190dp"
+			android:layout_height="200dp"
+			android:layout_alignParentTop = "true"
+			android:layout_alignParentLeft = "true"
+			android:id="@+id/mouseButtonLeft"/>
+		<ImageButton
+			android:layout_height="40.0dp"
+			android:layout_width="40.0dp"
+			android:layout_alignParentBottom = "true"
+			android:layout_alignParentRight = "true"
+			android:id="@+id/mouseButtonExit"
+			android:background="@android:drawable/presence_offline" />
+		<SeekBar
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/mouseButtonLeft"
+			android:id="@+id/seekBar"
+			android:max="10" />
+	</RelativeLayout>
+</LinearLayout>
